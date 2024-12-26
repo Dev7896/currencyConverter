@@ -12,8 +12,8 @@ A simple and responsive currency converter application built using **HTML**, **C
 
 ## Demo
 
-Include a demo link here if hosted, for example:
-[Live Demo](#)
+demo link :
+[https://currency-converter-mu-azure.vercel.app/](#)
 
 ## Technologies Used
 
