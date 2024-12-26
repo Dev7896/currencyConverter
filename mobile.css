@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+:root {
+  --bigger-radius: 2rem;
+  --general: 4px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 12px 12px;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--bigger-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  margin: 0px 12px;
+  display: flex;
+  flex-flow: wrap column;
+}
+
+h1,
+.btn {
+  font-size: large;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: var(--bigger-radius);
+  background-color: #9932cc;
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 12px;
+  /* justify-self: center; */
+  margin-right: auto;
+}
+.btn {
+  margin: 16px auto;
+}
+.btn:focus {
+  outline: 1px dashed black;
+}
+.currency-box {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: var(--general);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0px 12px;
+  border: 1px solid black;
+  position: relative;
+  z-index: 0;
+}
+#first-box {
+  margin-bottom: -6px;
+}
+#second-box {
+  margin-top: -6px;
+}
+#currency-one {
+  justify-self: flex-start;
+  align-self: center;
+}
+#currency-two {
+  justify-self: flex-start;
+  align-self: center;
+}
+select {
+  width: auto;
+  height: auto;
+  color: white;
+  background-color: #9932cc;
+  padding: 6px 8px;
+  border: none;
+  border-radius: var(--general);
+  margin-top: 6px;
+  margin-left: auto;
+}
+select:focus {
+  /* width: 100%; */
+  outline: 1px dashed black;
+}
+.currency-amount {
+  font-family: "Roboto Mono", serif;
+  width: 50vw;
+  border-radius: var(--general);
+  border: 1px solid black;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  padding: 6px;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+.currency-amount:focus {
+  outline: 1px solid #9932cc;
+  border: none;
+}
+.swap {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+  background-color: white;
+  margin: auto;
+  border: 1px solid black;
+}
+.swap:focus {
+  outline: 1px dashed #9932cc;
+  border: none;
+}

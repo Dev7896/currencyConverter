@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="desktop.css"
+      media="screen and (min-width: 601px)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>currency converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>currency converter</h1>
+      <div class="currency-box" id="first-box">
+        <p id="currency-one">currency</p>
+        <select
+          name="currency-type"
+          id="first_currency"
+          class="currency-type"
+        ></select>
+        <input
+          type="number"
+          name="currency-amount"
+          class="currency-amount"
+          id="first-amount"
+        />
+      </div>
+      <button class="swap"><i class="ri-exchange-line ri-3x"></i></button>
+      <div class="currency-box" id="second-box">
+        <p id="currency-two">currency</p>
+        <select
+          name="currency-type"
+          id="second_currency"
+          class="currency-type"
+        ></select>
+        <input
+          type="number"
+          name="currency-amount"
+          class="currency-amount"
+          id="second-amount"
+          disabled
+        />
+      </div>
+      <button id="convert" class="btn">convert</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
